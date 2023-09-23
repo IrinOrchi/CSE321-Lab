@@ -1,0 +1,24 @@
+1.a)touch 19301023_1.txt 19301023_2.txt 19301023_3.txt 19301023_4.txt
+  mkdir irin1 irin2
+  mv 19301023_1.txt 19301023_2.txt 19301023_3.txt ~/irin1
+  cp irin1/19301023_1.txt 19301023_2.txt irin2
+  mkdir irin3
+  cp -r irin1 irin3
+  cd irin3
+  ls -l
+  chmod g=r-x 19301023_1.txt
+  chmod o=r-x 19301023_1.txt
+  chmod g=r-x 19301023_2.txt
+  chmod o=r-x 19301023_2.txt
+  chmod g=r-x 19301023_3.txt
+  chmod o=r-x 19301023_3.txt
+  cd ..
+  pwd
+  ls
+  mv irin3 ~
+  rm -r ~
+
+b)cat course.txt
+  grep -c cse course.txt
+c)ls -a
+d)sed-n '5,17p' file.txt
